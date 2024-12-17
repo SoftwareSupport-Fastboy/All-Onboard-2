@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Các Onboard từ trước tới nay</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="loader-style.css">
+    <link rel="stylesheet" href="toggle.css">
+    <link rel="icon" href="Logo.PNG">
+</head>
+
+
+
+
+<body>
+    <aside>
+        <input type="checkbox" id="Menu-Aside-Input">
+        <label for="Menu-Aside-Input" id="Menu-Aside-Icon">
+            <div id="icon-menu-1">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 6H12H21" />
+                    <path d="M3 12H21" />
+                    <path d="M3 18H21" />
+                </svg>  
+            </div>
+            <div id="icon-menu-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 18L18 6" />
+                    <path d="M6 6L18 18" />
+                </svg>
+            </div>
+        </label>
+        <ul id="Menu-Aside">
+            <li>
+                <label for="Check_Onboard-Input">
+                    <div class="home-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 19V12.2672C21 11.1708 20.5499 10.1224 19.755 9.36725L13.3775 3.30862C12.6056 2.57529 11.3944 2.57529 10.6225 3.30863L4.245 9.36725C3.45008 10.1224 3 11.1708 3 12.2672V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19Z" 
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 15C9 13.8954 9.89543 13 11 13H13C14.1046 13 15 13.8954 15 15V21H9V15Z" 
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>                    
+                    <span>Check Onboard</span>
+                </label>
+                <input id="Check_Onboard-Input">
+            </li>
+            <li>
+                <label for="All_Onboard-Input">
+                    <div class="all-onboard-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 6C2 6 3.5 4 7 4C10.5 4 12 6 12 6V20C12 20 10.5 19 7 19C3.5 19 2 20 2 20V6Z"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 6C12 6 13.5 4 17 4C20.5 4 22 6 22 6V20C22 20 20.5 19 17 19C13.5 19 12 20 12 20V6Z"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <span>All Onboard</span>
+                </label>
+                <input id="All_Onboard-Input">
+            </li>
+            <li>
+                <label for="Admin-Input">
+                    <div class="admin-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.3 17.85C9.3 19.5897 7.8897 21 6.15 21C4.4103 21 3 19.5897 3 17.85C3 16.1103 4.4103 14.7 6.15 14.7H17.85C19.5897 14.7 21 16.1103 21 17.85C21 19.5897 19.5897 21 17.85 21C16.1103 21 14.7 19.5897 14.7 17.85V6.15C14.7 4.4103 16.1103 3 17.85 3C19.5897 3 21 4.4103 21 6.15C21 7.8897 19.5897 9.3 17.85 9.3H6.15C4.4103 9.3 3 7.8897 3 6.15C3 4.4103 4.4103 3 6.15 3C7.8897 3 9.3 4.4103 9.3 6.15V17.85Z" 
+                                  stroke="currentColor" stroke-width="2"/>
+                        </svg>                        
+                    </div>
+                    <span>Admin</span>
+                </label>
+                <input id="Admin-Input">
+            </li>
+        </ul>
+    </aside>
+
+    <div id="Check_Onboard_container">
+        <div class="Check_Onboard_container_subject">CHECK ONBOARD</div>
+        <div class="Check_Onboard_2_containers">
+            <div id="URL_Triggers_container-ID" class="URL_Triggers_container">
+                <div id="ten_URL_Triggers">URL Triggers</div>
+                <div id="URL_Triggers-fetch-data"></div>
+            </div>
+            <div id="Other_documents_container-ID" class="Other_documents_container">
+                <div id="ten_Other_documents">Other Documents</div>
+
+            </div>
+            <div id="Personal_Board_container-ID" class="Personal_Board_container">
+                <div id="ten_Personal_Board">Personal Board</div>
+                <div id="Personal-Board-Button-fetch-data"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="All_Onboard_container">
+        <div class="loader" id="loader">
+            <div></div>
+            <span></span>
+            <div style="position: relative;top:100px;text-align: center;font-size: 1.5rem;">Vui lòng chờ,<br>Dữ liệu nhiều nên cần tải xuống</div>
+            <div id="gap-loi-loading">Đã gặp lỗi,<br>refresh lại nhé</div>
+        </div>
+
+
+        <div class="All_Onboard_container_Subject" id="Tieu-De">TẤT CẢ ONBOARD</div>
+        <div class="search-container">
+            <div></div>
+            <div>
+                <div class="input-and-cancel">
+                    <input type="text" id="searchInput" class="search-bar" placeholder="Tìm kiếm (nhiều điều kiện thì ngăn cách dấu phẩy)" list="staff-list">
+                    <div class="cancel-button" title="Có thể bấm Esc"></div>
+                </div>
+                <button id="searchBtn" class="search-btn" title="Có thể bấm Enter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L16.5143 16.5065M19 10.5C19 15.1944 15.1944 19 10.5 19C5.80558 19 2 15.1944 2 10.5C2 5.80558 5.80558 2 10.5 2C15.1944 2 19 5.80558 19 10.5Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <a class="gotogooglesheet" href="https://docs.google.com/spreadsheets/d/1za4urdMvQG5HL9NAclTtMxbCqxzqqaXiGeS1mHR7ghw" target="_blank" class="gotogooglesheet">Google Sheet</a>
+                <div>
+                    <button id="staffButton">OB Staff</button>
+                    <div id="staffDropdown" class="dropdown-menu"></div>
+                    <button id="monthButton">Month Check</button>
+                    <div id="monthDropdown" class="dropdown-menu"></div>
+                    <button id="servicesButton">OB Service</button>
+                    <div id="servciesDropdown" class="dropdown-menu"></div>
+                    <button id="activeButton">Active Status</button>
+                    <div id="activeDropdown" class="dropdown-menu"></div>
+                </div>
+            </div>
+        </div>
+        <div class="details_container">
+            <details>
+                <summary><strong><span id="total-row-whole-sheet">Tổng số onboard: </span><span id="Tieu-De-2"></span></strong></summary>
+                <span>Đây là tổng số Onboard tính từ tháng 6/2021 đến </span><span id="Tieu-De-3"></span><span>, còn trước đó không có thông tin.</span>
+            </details>
+            <div id="resultCount">Tìm thấy ... kết quả</div>
+        </div>
+        
+        <div class="table-container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Company Name</th>
+                        <th>OB service</th>
+                        <th>OB STAFF</th>
+                        <th>Ticket OB</th>
+                        <th>Active?</th>
+                        <th>Note</th>
+                        <th>Status</th>
+                        <th>Month Check</th>                    
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="Admin_container">
+        <div class="Admin_container_Subject" id="Tieu-De">ADMIN SETTING</div>
+        <div class="Admin_contain_containers">
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox">
+                <div class="theme-switch__container">
+                  <div class="theme-switch__clouds"></div>
+                  <div class="theme-switch__stars-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <div class="theme-switch__circle-container">
+                    <div class="theme-switch__sun-moon-container">
+                      <div class="theme-switch__moon">
+                        <div class="theme-switch__spot"></div>
+                        <div class="theme-switch__spot"></div>
+                        <div class="theme-switch__spot"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <script src="main-script.js"></script>
+    <script src="Check-onboard-script.js"></script>
+    <script src="All_onboard-script.js"></script>
+</body>
+</html>
